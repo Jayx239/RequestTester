@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 PostTest
+  h2 Headers
+  ul
+    each val,key in headers
+      li(id=key)= val
+  h2 cookies
+  ul
+  each val,key in cookies
+    li(id=key)=val
+    h2 query
+  ul
+  each val,key in query
+    li(id=key)=val
